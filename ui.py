@@ -5,7 +5,13 @@ st.set_page_config(
     layout="centered"
 )
 st.title("🎥 AI Youtube Vedio Analyzer")
-
+st.markdown(''' 
+       <style>
+            [data-testid="stAppViewContainer"]{
+             background-color:#FFA421;
+            }
+        </style>
+''',unsafe_allow_html=True)
 #cache-fast access,temp storage=>most freq access
 @st.cache_resource
 def get_agent():
